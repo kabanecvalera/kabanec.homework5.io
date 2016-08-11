@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'HelveticaNeue';
+    src: url('fonts/HelveticaNeue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,39 +23,118 @@ body{
 }
 
 .menu{
-    list-style: none;
-}
-
-.menu li{
-    margin: 0 auto;
     width: 1215px;
     height: 36px;
-    font: 14px Helvetica Neue;
-    color: #60b5ed;
+    background: #074E8C;
+    list-style: none;
+    position: relative;
+}
+
+.menu > li{
+    
     display: inline;
-    margin-right: 15px;
+    margin-left: 100px;
+}
+
+.menu > li > a{
+   font: 14px HelveticaNeue;
+    color: #60b5ed;
+    text-decoration: none;
+    padding: 0 0
 }
 
 .menu-active{
-    font: 14px Helvetica Neue;
+    font: 14px HelveticaNeue;
     color: #fff;
+}
+
+.logo{
+  position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .form{
     width: 560px;
     height: 613px;
+    margin: 215px 0 0 350px; 
 }
 
-.form-create{
-    width: 149px;
-    height: 35px;
-    font: 14px Helvetica Neue;
+.form-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.form-btn-fb{
+.form-txt {
+    padding-top: 20px;
     
+    text-align: center;
+    line-height: 1px;
+    color: #aaa;
+}
+
+.form-special {
+    font-size: 20px;
+}
+
+
+.form-txt-border {
+    padding-top: 12px;
+    position: relative;
+    
+    font-size: 16px;
+    font-style: italic;
+}
+
+.form-txt-border:before {
+    content: "";
+    display: block;
+    width: 190px;
+    height: 1px;
+    position: absolute;
+    top: -7px;
+    left: 15px; 
+    
+    background: #d0caca;
+}
+
+.form-input {
+    width: 165px;
+    height: 45px;
+    padding: 0 16px;
+    margin: 40px 9px 15px 9px;
+    
+    font-size: 15px;
+    line-height: 45px;
+    
+    border: 1px solid #dde2e4;
+    border-radius: 3px;
+}
+
+.form-input:focus {
+    outline: 0;
+}
+
+.form-btn {
+    width: 200px;
+    height: 40px;
+    margin: 0 9px;
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    
+    background: #3394DB;
+    border: 0;
+    border-radius: 3px; 
+}
+
+.form-btn:hover {
+    background: #ff9148;
+    cursor: pointer;
 }
 
 .form-footer{
-    font: 11px Helvetica Neue;
+    font: 11px HelveticaNeue;
 }
