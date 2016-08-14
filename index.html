@@ -8,56 +8,62 @@
 <body>
 
 <div class="container">
-
 <!--MENU PATH-->   
-<div class="menu">
-   <div class="menu-first">
-        <ul class="menu-first-items">
-            <li><a href="#">Meu YouBike</a></li>
-            <li><a href="#">Vender</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Ajuda</a></li>
-        </ul>
+    <div class="menu">
+       <div class="menu-first">
+            <ul class="menu-first-items">
+                <li><a href="#">Meu YouBike</a></li>
+                <li class="first-active"><a href="#">Vender</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </div>
+        <div class="menu-second">
+            <ul class="menu-second-items">
+                <li><a href="#">Minhas Ofertas</a></li>
+                <li class="second-active">Ola!<a href="#" class="second-active">Entrar</a>ou<a href="#" class="second-active">Cadastre-se</a></li>
+            </ul>
+        </div>
+        <div class="menu-logo">
+            <img src="img/flag.png" alt="">
+        </div>
     </div>
-    <div class="menu-second">
-        <ul class="menu-second-items">
-            <li><a href="#">Minhas Ofertas</a></li>
-            <li>Ola!<a href="#">Entrar</a>ou<a href="#">Cadastre-se</a></li>
-        </ul>
-    </div>
-    <div class="menu-logo">
-        <img src="img/flag.png" alt="">
-    </div>
-</div>
-    
-<!--FORM PATH-->    
-<div class="form">
-    <h1 class="form-header">Cadastre-se</h1>
-    
-    <p><button type="submit" class="facebook add">Log in with Facebook</button></p>
-    
-    <div class="form-txt">
-        <p class="form-txt-border">OU</p>
-    </div>
+    <!--FORM PATH-->    
+    <div class="form">
+        <h1 class="form-header">Cadastre-se</h1>
 
-    <div class="form-user">
-        <input class="form-input-first" type="name" name="your-name" placeholder="First Name" autofocus required>
+        <p><button type="submit" class="facebook add">Log in with Facebook</button></p>
         
-        <input class="form-input" type="name" name="your-name" placeholder="Last Name" autofocus required>
+        <div class="form-line">
+            <p class="form-border-right">OU</p>
+            <p class="form-border-left"></p>
+        </div>
         
-        <input class="form-input" type="name" name="your-name" placeholder="Email Address" autofocus required>
-        
-        <input class="form-input" type="name" name="your-name" placeholder="Choose Password" autofocus required>
-        
-        <input class="form-input" type="name" name="your-name" placeholder="Pasword Confirm" autofocus required>
-        
-        <button class="form-btn">Create my account</button>
+        <div class="form-user">
+            <input class="form-input-first" type="text" name="first_name" id="first_name" placeholder="First Name" autofocus required>
+
+            <input class="form-input" type="text" name="last_name" id="last_name" placeholder="Last Name">
+
+            <input class="form-input" type="email" name="email" id="email" placeholder="Email Address">
+
+            <input class="form-input" type="password" name="password" id="password" id="password" placeholder="Choose Password">
+
+            <input class="form-input" type="password" name="password" id="password" placeholder="Pasword Confirm">
+        </div>
+
+        <div class="form-checkbox">
+            <input type="checkbox" id="send">
+            <label for="send">Send me You bike updates and tips</label>
+        </div>
+
+        <div class="form-footer">
+            <div class="block-form-btn">
+                <button class="form-btn">Create my Account</button>
+            </div>
+            <p class="form-footer-txt">By clicking the button above,you agree to the Terms of Service Xiew our Privacy Policy.</p>
+        </div>
     </div>
-    </form>
-    <p>agree to the Terms of Service
-    Xiew our Privacy Policy.</p>
-</div>
 </div>
 </body>
 </html>

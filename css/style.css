@@ -31,56 +31,57 @@ body{
 }
 
 .menu-first-items{
-    margin-left: 441px;
+    margin-left: 458px;
     float: left;
     list-style: none;
-    
-    padding: 8px 0;
+    line-height: 36px;
 }
 
 .menu-first-items > li{
     display: inline;
-    padding-left: 26px;
-    
+    padding: 12px 0 10px 0;
 }
 
 .menu-first-items > li > a{
     text-decoration: none;
-    padding: 0 0;
-    font: 14px 'HelveticaNeue';
+    padding: 0 7px 0 10px;
+    font: 15px 'HelveticaNeue';
     color: #60b5ed;
 }
 
-.menu-first-active{
+.first-active{
     height: 36px;
-    font: 14px 'HelveticaNeue';
+    font: 15px 'HelveticaNeue';
+    font-weight: bold;
     color: #fff;
-    background: #4eabda;
+    background: #60b5ed;
     display: inline;
 }
 
 .menu-second-items{
     margin-left: 23px;
+    padding-left: 41px;
     float: left;
     list-style: none;
-     border-left: 1px solid #fff;
-    padding: 8px 14px;
+    border-left: 1px solid #fff;
+    line-height: 36px;
 }
 
 .menu-second-items > li{
     display: inline;
-    padding: 0 1px 0 34px;
-    
+    padding: 9px 21px 10px 14px;
 }
 
 .menu-second-items > li > a{
+   font: 14px 'HelveticaNeue';
+    color: #fff;
     text-decoration: none;
-    padding: 0 0;
-    font: 14px 'HelveticaNeue';
-    color: #60b5ed;
 }
 
-.menu-second-active{color: #fff;}
+.second-active{
+    color: #fff;
+    background: #60b5ed;
+}
 
 .menu-logo{
     position: absolute;
@@ -111,7 +112,7 @@ body{
     background: -webkit-linear-gradient(top,  rgba(63,87,147,1) 0%,rgba(49,67,115,1) 100%);
     background: linear-gradient(to bottom,  rgba(63,87,147,1) 0%,rgba(49,67,115,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f5793', endColorstr='#314373',GradientType=0 );
-    border: 1px solid #090c15;
+    border: 1px solid rgba(9, 12, 21, 0.36);
     padding: 0 54px 0 0;
     margin: 34px 0 0 145px;
     font: 600 14px/35px 'HelveticaNeue', Tahoma;
@@ -144,75 +145,97 @@ body{
     border-radius: .15em 0 0 .15em;
 }
 
-.add:before{
-    content: '\66';
-}
+.add:before{content: '\66';}
 
-.form-txt {
-    
-}
+.form-line{margin: 16px 273px;}
 
-.form-special {
-    font-size: 20px;
-}
-
-
-.form-txt-border {
+.form-border-right{
     padding-top: 12px;
     position: relative;
-    
-    font-size: 16px;
-    font-style: italic;
+    font-size: 15px;
+    color: #7b7676;
 }
-/*
-.form-txt-border:before {
+
+.form-border-right:before{
     content: "";
     display: block;
-    width: 190px;
+    width: 122px;
     height: 1px;
     position: absolute;
-    top: -7px;
-    left: 15px; 
-    
-    background: #d0caca;
-}*/
+    top: 19px;
+    right: 19px; 
+    background: #7b7676;
+}
 
-.form-input {
-    width: 165px;
-    height: 45px;
+.form-border-left{
+    padding-top: 12px;
+    position: relative;
+}
+
+.form-border-left:before{
+    content: "";
+    display: block;
+    width: 122px;
+    height: 1px;
+    position: absolute;
+    top: -11px;
+    left: 26px; 
+    background: #7b7676;
+}
+ 
+.form-user{margin: 17px 144px;}
+
+.form-input-first{
+    width: 243px;
+    height: 35px;
     padding: 0 16px;
-    margin: 40px 9px 15px 9px;
-    
+    margin-bottom: 17px;
+    line-height: 35px;
     font-size: 15px;
-    line-height: 45px;
-    
     border: 1px solid #dde2e4;
     border-radius: 3px;
+    background: #1B5288;
 }
 
-.form-input:focus {
-    outline: 0;
-}
-
-.form-btn {
-    width: 200px;
-    height: 40px;
-    margin: 0 9px;
-    
+.form-input{
+    width: 243px;
+    height: 35px;
+    padding: 0 16px;
+    margin-bottom: 16px;
     font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-    
-    background: #3394DB;
+    line-height: 35px;
+    border: 1px solid #dde2e4;
     border: 0;
-    border-radius: 3px; 
+    border-radius: 3px;
+    background: black;
 }
 
-.form-btn:hover {
-    background: #ff9148;
-    cursor: pointer;
+.form-checkbox{
+    margin: -13px 146px;
+    font: 15px 'HelveticaNeue';
+    color: #fff;
 }
 
 .form-footer{
+    width: 300px;
+    margin: 34px 125px;
+}
+
+.block-form-btn{margin: 19px 72px;}
+
+.form-btn{
+    width: 154px;
+    height: 38px;
+    margin: 0 9px;
+    font-size: 15px;
+    color: #fff;
+    background: #3394DB;
+    border: 0;
+    border-radius: 3px;
+}
+
+.form-footer-txt{
     font: 11px 'HelveticaNeue';
+    color: #fff;
+    text-align: center;
 }
